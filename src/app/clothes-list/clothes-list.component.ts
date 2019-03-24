@@ -17,4 +17,7 @@ export class ClothesListComponent implements OnInit {
       { this.clothesData = clothesData});
   }
 
+  addItem(evt){
+    this.clothesData.push(evt);
+  }
 }

@@ -4,6 +4,6 @@
     <h4><i>Add Clothes</i></h4>
   </div>
 </h2>
-<!-- <app-add-item (addCarEE)="addCar($event)"></app-add-car> -->
+<app-add-clothes (addItemEE)="addItem($event)"></app-add-clothes>
 <app-item *ngFor="let clothesData of clothesData"
 [clothesData]="clothesData"></app-item>
