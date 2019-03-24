@@ -1,0 +1,14 @@
+<div class="ui raised segment">
+  <div class="ui two column very relaxed grid ">
+    <div class="column">
+      <div *ngIf="clothesData">
+        <h3>Item: {{clothesData.item}}</h3>
+      </div>
+    </div>
+    <div class="column">
+      <div *ngIf="clothesData">
+        <img src={{clothesData.imageURL}} [style.width.px]='itemImageWidth'>
+      </div>
+    </div>
+  </div>
+</div>

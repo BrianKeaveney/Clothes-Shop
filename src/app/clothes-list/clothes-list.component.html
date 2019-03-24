@@ -1,0 +1,9 @@
+<h2 class="ui grey header">
+  <div class="content">
+    Clothes Shop
+    <h4><i>Add Clothes</i></h4>
+  </div>
+</h2>
+<!-- <app-add-item (addCarEE)="addCar($event)"></app-add-car> -->
+<app-item *ngFor="let clothesData of clothesData"
+[clothesData]="clothesData"></app-item>
