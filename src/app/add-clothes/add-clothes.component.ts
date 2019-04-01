@@ -13,10 +13,10 @@ export class AddClothesComponent implements OnInit {
 
   constructor(private _clothesApiService: ClothesApiService) { }
 
-  addItem(itemType:string, imageURL:string):boolean {
-    let tempItem = new Clothes(itemType,imageURL);
+  addItem(itemType:string, imageURL:string, price:number):boolean {
+    let tempItem = new Clothes(itemType,imageURL, price);
     this.addItemEE.emit(tempItem);
-    this._clothesApiService.addItem({item: {itemType, imageURL}}).subscribe(res => console.log(res));
+    this._clothesApiService.addItem({item: {itemType, imageURL, price}}).subscribe(res => console.log(res));
     return false;
   }
 

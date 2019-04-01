@@ -8,11 +8,15 @@
         <input type="text" name="item" placeholder="Enter Item" #item>
       </div>
       <div class="field">
+        <label>Price</label>
+        <input type="text" name="item" placeholder="Enter Price" #price>
+      </div>
+      <div class="field">
         <label>Image</label>
         <input type="text" name="imageURL" placeholder="Enter Link to Image" #imageUrl>
       </div>
       <button class="ui primary button" type="submit" (click)="addItem(item.value,
-      imageUrl.value)">Add the Item</button>
+      imageUrl.value, price.value)">Add the Item</button>
       <button class="ui button" type="reset">Cancel</button>
     </form>
   </div>

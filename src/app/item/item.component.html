@@ -2,7 +2,11 @@
   <div class="ui two column very relaxed grid ">
     <div class="column">
       <div *ngIf="clothesData">
-        <h3>Item: {{clothesData.itemType}}</h3>
+        <h3>{{clothesData.itemType}}</h3>
+      </div>
+      <br>
+      <div class="row">
+        <h3>€{{clothesData.price}}</h3>
       </div>
     </div>
     <div class="column">
