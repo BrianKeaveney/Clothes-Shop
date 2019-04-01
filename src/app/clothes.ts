@@ -1,6 +1,6 @@
-import { IClothes } from './iclothes';
+import { IItems } from './iclothes';
 
-export class Clothes implements IClothes {
+export class Clothes implements IItems {
     itemType:string;
     imageURL:string;
     price:number;

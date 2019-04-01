@@ -22,8 +22,8 @@ export class ClothesApiService {
     );
   }
 
-  getClothesData(): Observable<IClothes[]> {
-    return this._http.get<IClothes[]>(this._siteURL).pipe(
+  getClothesData(): Observable<IClothes> {
+    return this._http.get<IClothes>(this._siteURL).pipe(
       tap(data => console.log("All: " + JSON.stringify(data))),
       catchError(this.handleError));
   }

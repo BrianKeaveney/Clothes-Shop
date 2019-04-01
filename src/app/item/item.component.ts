@@ -7,7 +7,7 @@ import { IClothes } from '../iclothes';
   styleUrls: ['./item.component.css']
 })
 export class ItemComponent implements OnInit {
-  @Input() clothesData: IClothes;
+  @Input() clothesData;
   itemImageWidth:number = 300;
   
   constructor() { }
