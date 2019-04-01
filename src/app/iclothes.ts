@@ -1,4 +1,4 @@
 export interface IClothes {
-    item:string;
+    itemType:string;
     imageURL:string;
 }

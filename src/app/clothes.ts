@@ -1,11 +1,11 @@
 import { IClothes } from './iclothes';
 
 export class Clothes implements IClothes {
-    item:string;
+    itemType:string;
     imageURL:string;
 
-    constructor(item:string, imageURL:string){
-        this.item = item;
+    constructor(itemType:string, imageURL:string){
+        this.itemType = itemType;
         this.imageURL = imageURL;
     }
 }

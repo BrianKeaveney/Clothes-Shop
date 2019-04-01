@@ -1,11 +1,11 @@
 {
     "clothes_data": [
         {
-            "item": "jeans",
+            "itemType": "jeans",
             "imageURL": "https://lp2.hm.com/hmgoepprod?set=source[/bb/a6/bba6a64503292335331611669890ac9d6b5c61d1.jpg],origin[dam],category[ladies_jeans_skinny_skinnyhigh],type[DESCRIPTIVESTILLLIFE],res[s],hmver[1]&call=url[file:/product/main]"
         },
         {
-            "item": "t-shirt",
+            "itemType": "t-shirt",
             "imageURL": "https://rendering.documents.cimpress.io/v1/vp/preview?scene=https://scene.products.cimpress.io/v1/scenes/39fff789-7ad5-4b08-8faf-753d0c960f48&width=690&height=690&quality=80"
         }
     ]
