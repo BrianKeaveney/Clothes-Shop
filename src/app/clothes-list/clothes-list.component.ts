@@ -9,12 +9,12 @@ import { IClothes } from '../iclothes';
   providers: [ClothesApiService]
 })
 export class ClothesListComponent implements OnInit {
-  clothesData: IClothes[];
+  clothesData;
   constructor(private _clothesAPIService: ClothesApiService) { }
 
   ngOnInit() {
     this._clothesAPIService.getClothesData().subscribe(clothesData =>
-      { this.clothesData = clothesData});
+      { this.clothesData = clothesData.Items});
   }
 
   addItem(evt){

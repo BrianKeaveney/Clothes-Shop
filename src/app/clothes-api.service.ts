@@ -10,16 +10,13 @@ import { Clothes } from './clothes';
   providedIn: 'root'
 })
 export class ClothesApiService {
-
-  private _siteURL = 'http://localhost:3000/clothes_data';
-  private _getSiteURL = 'https://qtxdl5l8gg.execute-api.eu-west-1.amazonaws.com/prod/cart';
-  private _postSiteURL = 'https://qtxdl5l8gg.execute-api.eu-west-1.amazonaws.com/prod/cart';
+  
+  private _siteURL = 'https://qtxdl5l8gg.execute-api.eu-west-1.amazonaws.com/prod/cart';
 
   constructor(private _http: HttpClient) { }
 
   addItem (newItem): Observable<Clothes> {
-    console.log("works");
-    return this._http.post<Clothes>(this._postSiteURL, newItem)
+    return this._http.post<Clothes>(this._siteURL, newItem)
     .pipe(
       catchError(this.handleError)
     );
